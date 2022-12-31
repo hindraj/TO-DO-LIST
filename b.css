@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(45, 46, 45);
+    height: 35%;
+    width: 550px;
+    margin: auto;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 30px 0;
+    border-radius: 8px;
+}
+
+#heading{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+#heading h1{
+    color: rgb(227, 187, 255);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+#newTask{
+    position: relative;
+    padding: 30px 20px;
+    background-color: rgb(187, 225, 255);
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgb(0, 0, 0);
+}
+
+#newTask input{
+    border-radius: 5px;
+    width: 70%;
+    height: 45px;
+    font-size: 15px;
+    border: 2px solid #ffff;
+    padding: 12px;
+    color: black;
+    font-weight: 500;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+#newTask input :focus{
+    outline: none;
+    border-color: aqua;
+}
+
+#newTask button{
+    position: relative;
+    float: right;
+    width: 140px;
+    height: 45px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    background: rgb(0, 0, 0);
+    color: aliceblue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+
+#tasks{
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+    background: rgb(187, 225, 255);
+    padding: 30px 20px;
+    border-radius: 5px;
+
+}
+
+.task{
+    background: #fff;
+    height: 50px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+
+}
+
+.task span{
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+    padding-left:3%;
+}
+
+.task button{
+    border: none;
+    background: rgb(0, 0, 0);
+    height: 100%;
+    width: 45px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+
+    
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.7;
+}
